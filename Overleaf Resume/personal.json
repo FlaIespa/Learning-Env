@@ -1,0 +1,29 @@
+[
+    {
+        "name": "Flávia da Silva Iespa",
+        "website": "http://kumarpallav.com",
+        "email": "flavia.iespa@uni.minerva.edu",
+        "email2": "flaviasiespa@gmail.com",
+        "phone": "+8860968027044",
+        "linkedin":"https://www.linkedin.com/in/fl%C3%A1via-i-5aaab313a/",
+        "languages": [
+            {
+                "language": "Python"
+            },
+            {
+                "language": "JavaScript"
+            },
+            {
+                "language": "C"
+            }
+        ],
+        "technologies": [
+            {
+                "technology": "AWS"
+            },
+            {
+                "technology": "React"
+            }
+        ]
+    }
+]

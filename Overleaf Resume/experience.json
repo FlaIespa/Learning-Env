@@ -1,0 +1,61 @@
+[
+    {
+        "company": "Iluma",
+        "company_location": "Medellin, CO",
+        "role": "Data Software Engineer Intern",
+        "team": "OneNote",
+        "time_duration": "May 2022 - August 2022",
+        "details": [
+            {
+                "title": "Data Pipelines",
+                "description": "Designed, implemented, and tested data pipelines to process experimental/microbiome data from the lab to a virtual warehouse."
+            },
+            {
+                "title": "App Development",
+                "description": "Application Development to expose, manipulate, and analyze microbiome data in Python."
+            },
+            {
+                "title": "Client Portal",
+                "description": "A client-friendly portal for an easier interface with the information gathered by the company and required by the client."
+            }
+        ]
+    },
+    {
+        "company": "Latin American Leadership Academy",
+        "company_location": "Medellin, CO",
+        "role": "Admission Officer and Strategic Initiatives Intern",
+        "team": "Admissions",
+        "time_duration": "April 2020 - May, 2021",
+        "details": [
+            {
+                "title": "Admissions Team",
+                "description": "Worked on adding ability on OneNote to host web content, making sure it is backwards compatible. Implemented features to make handling and editing web content on the OneNote page easier. Added support for this feature on OneNote web app."
+            },
+            {
+                "title": "Merged Cells for Tables",
+                "description": "Added support for spanned cells for tables in OneNote, keeping in mind backwards compatibility. Implemented these capabilities in OneNote web app."
+            },
+            {
+                "title": "Realtime Ink",
+                "description": "As a ramp up project, prototyped ink collaboration using SignalR web-sockets. Worked on experimenting load and delay with multiple inputs in realtime."
+            }
+        ]
+    },
+    {
+        "company": "Oracle",
+        "company_location": "Bangalore, India",
+        "role": "Software Engineering Intern",
+        "team": "Apps for Enterprises",
+        "time_duration": "Nov 2014 - May 2016",
+        "details": [
+            {
+                "title": "Containerization of iOS Apps",
+                "description": "Worked on sand-boxing of enterprise applications (containerization) which enable them to be installed on employee's iOS devices without worrying about security issues. Implemented wrapping of library function calls using swizzling, objective-c backend, linker flags and dynamic library injection."
+            },
+            {
+                "title": "Sandboxed Browser App",
+                "description": "Built a demo browser application for iOS. Containerized the app using the custom script, so that it only works for certain urls."
+            }
+        ]
+    }
+]
