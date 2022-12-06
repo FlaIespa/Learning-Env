@@ -1,0 +1,10 @@
+import matplotlib.pyplot as plt
+
+#create basic scatterplot
+plt.plot(x, y, 'o')
+
+#obtain m (slope) and b(intercept) of linear regression line
+m, b = np.polyfit(x, y, 1)
+
+#add linear regression line to scatterplot
+plt.plot(x, m*x+b)

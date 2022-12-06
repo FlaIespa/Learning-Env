@@ -5,5 +5,11 @@
         "degree": "Bachelor of Computer Science and Social Sciences",
         "concentrations": "Computer Science and Artificial Intelligence; Cognition, Brain and Behavior",
         "time_period": "September 2021 - May 2025"
+    },
+    {
+        "school": "Colégio Militar do Rio de Janeiro",
+        "school_location": "Brazil",
+        "degree": "High School",
+        "time_period": "January 2013 - July 2019"
     }
 ]
