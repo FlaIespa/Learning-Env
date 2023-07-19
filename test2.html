@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Fla's Portfolio</title>
+  <style>
+    /* CSS styles for the portfolio */
+
+    /* ... (existing CSS code) ... */
+
+    /* Updated styles for header and circle */
+
+    #circle-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 400px;
+    }
+
+    #canvas-container {
+      width: 200px;
+      height: 200px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Fla's Portfolio</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#employer'sopinion">Employer's opinion</a></li>
+      <li><a href="#grantsandawards">Grants and Awards</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="hero-section">
+    <h2>Welcome</h2>
+    <p>You will get to know my professional, academic and personal aspirations. Enjoy!</p>
+  </div>
+
+  <div id="circle-container">
+    <div id="canvas-container"></div>
+  </div>
+
+  <div class="portfolio-content">
+    <!-- ... (existing HTML code) ... -->
+  </div>
+
+  <script>
+    // JavaScript code for circle animation
+    const canvas = document.querySelector('#canvas-container');
+
+    const drawCircle = (context, x, y, radius, color) => {
+      context.beginPath();
+      context.arc(x, y, radius, 0, 2 * Math.PI);
+      context.fillStyle = color;
+      context.fill();
+      context.closePath();
+    };
+
+    const animate = () => {
+      const context = canvas.getContext('2d');
+      const centerX = canvas.width / 2;
+      const centerY = canvas.height / 2;
+      const radius = 100;
+      const color = '#f9f9f9';
+      const startAngle = 0;
+      let endAngle = Math.PI / 2;
+      let frame = 0;
+
+      const drawFrame = () => {
+        context.clearRect(0, 0, canvas.width, canvas.height);
+
+        // Draw circle
+        drawCircle(context, centerX, centerY, radius, color);
+
+        // Draw animated arc
+        context.beginPath();
+        context.arc(centerX, centerY, radius, startAngle, endAngle);
+        context.lineWidth = 10;
+        context.strokeStyle = '#333';
+        context.stroke();
+        context.closePath();
+
+        // Update end angle for animation
+        frame++;
+        endAngle = (frame / 100) * (2 * Math.PI);
+
+        if (endAngle < 2 * Math.PI) {
+          requestAnimationFrame(drawFrame);
+        }
+      };
+
+      drawFrame();
+    };
+
+    animate();
+  </script>
+</body>
+</html>
+

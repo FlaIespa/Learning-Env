@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Fla's Portfolio</title>
+  <style>
+    /* CSS styles for the portfolio */
+
+    body {
+      font-family: 'Times New Roman', Times, serif;
+      margin: 0;
+      padding: 20px;
+      text-align: justify;
+      line-height: 1.5;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0;
+    }
+
+    nav {
+      background-color: #f1f1f1;
+      padding: 10px;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    nav ul li {
+      display: inline-block;
+      margin-right: 10px;
+    }
+
+    nav ul li a {
+      color: #141414;
+      text-decoration: none;
+      padding: 5px;
+    }
+
+    .hero-section {
+      background-color: #f9f9f9;
+      padding: 100px 0;
+      text-align: center;
+    }
+
+    .hero-section h2 {
+      margin: 0;
+      font-size: 32px;
+    }
+
+    .hero-section p {
+      font-size: 18px;
+      color: #777;
+    }
+
+    .portfolio-content {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .section-title {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 15px;
+      padding: 10px 0;
+      margin-left: 20px;
+    }
+
+    .project-item {
+      margin-bottom: 20px;
+      border: 1px solid #f1f1f1;
+      padding: 10px;
+    }
+
+    .project-item h3 {
+      margin: 0;
+      font-size: 18px;
+    }
+
+    .project-item p {
+      font-size: 16px;
+      color: #777;
+    }
+
+    .project-item a {
+      color: #333;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    /* Updated styles for header and circle */
+
+    #circle-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 400px;
+    }
+
+    #canvas-container {
+      width: 200px;
+      height: 200px;
+      display: flex;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Fla's Portfolio</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#employer'sopinion">Employer's opinion</a></li>
+      <li><a href="#grantsandawards">Grants and Awards</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="hero-section">
+    <h2>Welcome</h2>
+    <p>You will get to know my professional, academic and personal aspirations. Enjoy!</p>
+  </div>
+
+  <div id="circle-container">
+    <div id="canvas-container"></div>
+  </div>
+
+  <div class="portfolio-content">
+    <section id="about">
+      <h2 class="section-title">About Me</h2>
+      <p> I am a Computer Science and Psychology student at Minerva University. As I world traveler and being in touch with several different walks of life, I realized how important it is that mental health tools also catch up with technology. And that is what I want to do.</p>
+    </section>
+    <section id="experience">
+      <h2 class="section-title">Experience</h2>
+      <ul>
+        <li>
+          <p>
+            Iluma Remote - Medellin, CO
+            Data Software Engineer Intern · Data Engineering May 2022 - August 2022
+          </p>
+          <ul>
+            <li>Data Pipelines: Designed, implemented, and tested data pipelines to process experimental/microbiome data from the lab to a virtual warehouse. Processed data from scratch, creating five pipelines for the company: one with over 150 columns from S3 Bucket into Redshift (from AWS); the other four by creating an API with the database of a partnering company (Asimetrix) and load them also into Redshift (from AWS).</li>
+            <li>App Development - Client Portal: Designed an application to expose, manipulate, and analyze microbiome data in Python. Started the development of a client portal, a React App for both farmers and scientists to have a direct form of facilitated communication while exchanging data.</li>
+            <li>Documentation: Documented pipelines for guidance on the ETL (Extract, Load, Transform) transformation on files, facilitating the visualization of how the data gets manipulated from source to destination in the company’s data warehouse, and any subsequent tables and views that are created.</li>
+            <li>Tech Debt: Fixed code to accommodate the changes made in the database. Examples of ’code fixing’ included: correct the code for changes in the original excel files and investigating causes of NULL statements in the Redshift resulting tables.</li>
+            <li>Logging Framework: Implemented a logging framework to accompany the growing database and assure more visibility for errors in case they occurred in the program. The logging framework was implemented in over 30 files within the database.</li>
+            <li>Materialized view in Python: Developed a materialized view in Python that merged data from four different tables that were commonly associated by the scientists.</li>
+          </ul>
+        </li>
+      </ul>
+
+      <ul>
+        <li>
+          <p>
+            Latin American Leadership Academy
+            Admission Officer · Admissions Team · April 2021 - May 2022
+          </p>
+          <ul>
+            <li>Evaluated applications and interviewed prospective students for Leadership Bootcamps.</li>
+            <li>Organized and mapped contacts of prospective partners for the launch of a national chapter of the organization in Brazil.</li>
+          </ul>
+        </li>
+      </ul>
+    <section id="employer'sopinion">
+      <h2 class="section-title">Employer's Opinion</h2>
+      <div class="project-item">
+        <h3>Iluma Innovations Labs - Karn Sun
+        </h3>
+        <p>
+          <ul>October 23rd, 2022</ul>
+          <ul>karen.y.sun@gmail.com</ul>
+          <ul>Recommendation for Flávia Iespa</ul>
+          <ul>To Whom It May Concern</ul>
+          <ul>My name is Karen Sun, Fractional CTO for the Iluma Alliance, a venture fund for life sciences research
+            based in Medellin, Colombia. We hired Flávia Iespa as a Data Engineering Intern for 4 months during the
+            summer of 2022 to work on data pipelines supporting gut microbiome research in several animal species.
+            She was responsible for engineering tasks ranging from devops to data modeling to quality assurance to
+            ETL implementation in Python. We worked in an adapted Agile methodology, observing the planning,
+            retrospective, and demo rituals using GitHub Issues as our tracker and estimator.
+            Since the beginning, Flá stood out as a self-starter, someone truly curious about the why and not just the
+            how, a quality hard to find in typically speed prioritizing younger engineers. Before the internship began,
+            she asked for a pre-work list and already started working through tutorials learning brand new skills like
+            Github, SQL, and Python. </ul>
+          <ul>By the time she started the internship she was already at intermediate level
+            (even according to HackerRank) and moved to advanced within the first week. She also stands out as
+            someone who works with rigor and comprehension– for instance, right after setting up her own
+            development environment, she immediately updated the README with specific instructions for those with
+            her OS, and filled in any gaps that weren’t obvious. This is an especially professional trait that can be
+            hard to cultivate, but speaks to far seeing maturity.
+            Flávia was able to onboard to some rather complex pipelines which clean, merge, and perform windowing
+            operations on multiple data sources, interfacing directly with scientists, translating their requests into
+            tickets, and delineating and breaking down the implementation work on her own. Throughout the
+            internship, she never stopped asking for more to learn and practice on her own time, and by the last
+            months, the scientists were going directly to her for ETL and pipeline requests! Not only is she competent,
+            she is also such a cheerful, warm addition to any space. Her experience facilitating, teaching, and
+            inquiring in remote settings definitely contributed to her solid foundation of connective remote work.
+            Finally, she developed in certain ways which are difficult for early career engineers– she embraced
+            making her work visible through early and often PRs, she learned exactly how and when to ask for a
+            pointer when blocked, and built quality assurance early into her development process through data sanity
+            checks and unit tests.</ul>
+          <ul>Iluma Innovation Labs was very fortunate to have Flá as a team member– she possesses enormous
+            dedication, participatory attitude, and work ethic. Please don’t hesitate to reach out for a reference or any
+            questions. Any team would be fortunate to have Flávia as a member!</ul>
+        </p>
+        <a href="#">Read More</a>
+      </div>
+      <div class="project-item">
+        <h3>Latin American Leadership Academy - Marcelo Peterlini</h3>
+        <p>
+          <ul>May 1st, 2021</ul>
+          <ul>To whom it may concern,</ul>
+          <ul>It is an honor to write this letter to enthusiastically endorse Flavia Iespa. I have known her for
+            about two years and since the first time I met her I was already impressed with her energy and
+            enthusiasm. Our first contact was through a 30 min Skype chat and after listening to Flavia’s story I
+            could understand how she was able to develop such grit and determination in an early stage in her
+            life. Her family never had the best financial and emotional structure to support her in the best way and
+            because of that she naturally developed a level of maturity well above average for her age. She grew
+            up being concerned about finding ways to support her family financially and also emotionally, playing
+            the psychologist role with her mom. Whenever Flavia sets a goal for herseIf there is nothing that can
+            happen that will prevent her from achieving it, she does not wait for opportunities to come to her, she
+            pursues it deliberately and makes it happen, and that is how I got the privilege to meet her.</ul>
+          <ul>I have been working in education and youth development for 6 years and I am currently the
+            Regional Director at Latin American Leadership Academy (LALA), an educational NGO with the
+            mission to identify, select and develop a new generation of young ethical and socially innovative
+            leaders around Latin America. Our work is focused on developing the most promising teenagers in
+            Latin America that have demonstrated leadership potential and desire to positive impact their
+            communities. We do that by organizing week long intensive leadership and social impact programs,
+            which we call bootcamps, to provide youth with all the tools, abilities and support to tackle the
+            problems they are most passionate about. Our selection criteria for the bootcamp we ran in August
+            2019 was very stringent: all applicants had to demonstrate a genuine commitment to creating social
+            impact, and show outstanding servant leadership, entrepreneurial, and intellectual potential. Finally,
+            they had to show mastery of English. In a way, we are trying to identify at an early stage the students
+            with a passion and potential to become the next future leaders of Latin America. I was responsible for
+            selecting Flavia to attend the bootcamp in Lima, Peru.</ul>
+          <ul>After an intensely selective process, we selected 30 students from all over Latin America.
+            Flavia stood out from the start: since she is a very charismatic, eloquent and outgoing person, she
+            naturally assumed the role of a leader in most activities that were proposed during the Bootcamp,
+            manifesting her strong leadership skills among the carefully selected group of young leaders. Part of
+            the Bootcamp goal was to support students to identify an issue they care about in the world and start
+            understanding that issue more deeply before deciding to develop an initiative that might contribute for
+            the solution of it. Most students of the Bootcamp were very quick in deciding the issue they would like
+            to explore, but Flavia decided to take a different route. In an environment where you gather the most
+            promising young leaders in Latin America, is very common for students to pretend to have clarity
+            about everything they are doing to prove to others that they were selected for a reason.</ul> 
+          <ul>Although,Flavia is no ordinary person and she wasn’t worried about creating an image of herself that fit the
+            expected patterns of the group, she was looking for truth and to understand what really mattered to
+            her, and that says a lot about her character. One that note, Flavia impressed me with her willingness
+            to share her truth and vulnerability at all times during the program, not worrying about how that would
+            make her be seen by others in the group. I remember having a conversation with her where she
+            opened up to me saying that she was lost and confused about the things she wanted to pursue with
+            her life, next steps to be taken after going back home and not knowing who she was. For me, that
+            simple act was a demonstration of her courage; courage to be vulnerable and ask for help when
+            everyone around her is telling her to be strong and deal with things by yourself. It fascinates me how
+            Flavia is able to use her network to help her make sense of her life and, consequently, make the right
+            decisions. She understands the value of the community and is able to use hers to achieve her goals.</ul>
+          <ul>I was also able to follow Flavia’s steps after the Bootcamp and was very gratifying to see her
+            spreading her light to other places around the world. After going back to Rio de Janeiro, Flavia started
+            to develop a podcast where she wants to bring more voice to youth to talk about all the issues that are
+            happening in the world. She also applied and was accepted at our LALA Academy Program, where
+            we selected some of the most promising young leaders in Latin America to attend a 3-month
+            immersive leadership and social innovation program in Medellin, Colombia. There I had the chance to
+            spend even more time with Flavia and was surprised by the grit and growth mindset she
+            demonstrated. Her eagerness to learn is off the chart. During my six years working with education, I
+            have never seen a student taking ownership of his or her learning so beautifully like Flavia. During the
+            3 month program, she became very interested in understanding contemplative practices, Buddhism,
+            and meditation. It was fascinating to see her commitment to growing in these three areas. Flavia
+            started to attend Buddhist teachings sessions once a week at a nearby Buddhist Center, practiced
+            one hour of meditation every single day in the morning prior to class, read three books focused in
+            contemplative practices in less than two weeks, was constantly watching videos and reading articles
+            about those topics and was looking for any opportunity she could find to refine her meditation practice.</ul>
+          <ul>Today, Flavia is working with me as an intern, supporting the admissions process for the
+            Bootcamps we organize. Once again, I am delighted by her professionalism and strive for excellence.
+            Her main responsibility as an intern is to support me with the interview process of students who have
+            applied for the Bootcamps. It stands out to me her deep care and compassion for the students. Before
+            each interview, she carefully reviews every student’s application, reading, and memorizing each detail
+            of it. During the interview, she is very skilled in holding a space where students can feel very
+            comfortable sharing who they are. I can clearly see in her traits of a phenomenal compassionate
+            leader, just by the way in which she offers attentive listening, presence and a liturgical follow up to
+            student’s answers in response to her questions. After a few seasons in the admissions team, Flavia
+            started to mentor new interns and, very quickly, became an inspiration and reference to them. It was
+            very common to have interns sharing all the learnings they were receiving from her and the care she
+            put into supporting them.</ul>
+          <ul>Recently, Flávia has started to volunteer at the CVV (Centro da Valorização da Vida). Her
+            main role as a volunteer is to receive calls from people who are going through depression and suicidal
+            thoughts, and offer them care by deeply listening to their stories and providing words of comfort and
+            support. When she first told me about that, my heart melted. This was the type of action that is a clear
+            manifestation of two of the main values that I associate with her, love and compassion. She is one of
+            the people I’ve worked with that can actually bring a radical transformation in society; not one that
+            changes our outer world, but one that changes our inner lives through unconditional love, acceptance
+            and understanding. There are very few people who are willing to have the courage to aim at
+            unconditionally loving and understanding the world, and Flavia is one of the rare beings out there.
+            It warms my heart to see Flavia getting closer to her truth and finding her own path into this
+            world. After a long process of self-reflection, Flavia is gaining more clarity about her desire to pursue a
+            career as a psychologist. I am certain that her kindness and compassionate heart will offer healing
+            and clarity to any person that comes into her life.</ul>
+          <ul>I am personally excited to follow Flavia’s journey, which will undoubtedly be transcendental for
+            the communities she touches. I will personally ensure I stay in touch with her to support her in any
+            way I can since she has the passion and potential to transform Latin America. I will be happy to
+            expand on this letter through a phone call if it would help you make an informed decision. But in short,
+            I reiterate that I endorse Flavia with the greatest enthusiasm and with no reservations.</ul>
+          Yours truly,.</p>
+        <a href="#">Read More</a>
+        <ul>
+        <img src="C:\Users\iespa\OneDrive\Documentos\Assinatura marcelo.png" alt="Image description">
+        </ul>
+      </div>
+      </div>
+      </div>
+    </section>
+
+      <section id="grantsandawards">
+        <h2 class="section-title">Grants and Awards</h2>
+          <ul>
+            <li>
+              <p> 
+                Youth Ambassadors
+                Certificate · United States (Washington D.C., Reno)
+              </p>
+              <ul>
+                <li>The U.S. Embassy in Brazil yearly selects Brazilian leaders from the whole country to enhance leadership skills in a 3-week exchange program focused on volunteerism and social justice.</li>
+                <li>Selected along with 49 other leaders among 17000 applicants.</li>
+                <li>Leveraged workshops, mentorship program and community visits to design improvement for a project I worked on in my community.</li>  
+              </ul>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <p>
+                Opportunity Funds
+                Certificate · Brazil 2019
+              </p>
+              <ul>
+                <li>The program yearly selects students from an underprivileged financial background with outstanding academic performance, for support in the application process to universities in the US.</li>
+                <li>Selected along with 17 other students among 1000 applicants.</li>
+                <li>Leveraged workshops, mentorship program and community visits to design improvement for a project I worked on in my community.</li>  
+              </ul>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <p>
+                Brazilian Youth Parliament
+                Certificate · Brazil 2019
+              </p>
+              <ul>
+                <li>The program yearly selects students to present a bill written by them focused on solving a problem in their community in a 1-week nationally televised program in the Brazilian Chamber to which all the federal congress people of the country were invited.</li>
+                <li>Selected along with other 76 students among 1943 projects.</li>
+                <li>Elected general Vice-President of the edition by peers, becoming responsible for leading - along with the President - the primary ceremony in which the bills would be discussed.</li>  
+              </ul>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <p>
+                U.S. Department of State Grantee
+                Certificate · Brazil 2019
+              </p>
+              <ul>
+                <li>The U.S. Department of State periodically selects Alumni through a rigorous application to receive a grant in the amount of 1000 dollars to allow for continuity of projects for future endeavors.</li>
+                <li>Grant directed towards participation in the Latin American Leadership Academy.</li>
+              </ul>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <p>
+                Latin American Leadership Academy (LALA)
+                Certificate · Peru, Colombia 2019-2020
+              </p>
+              <ul>
+                <li>The program periodically selects young leaders from all over Latin America to develop their leadership, entrepreneur and social innovation skills.</li>
+                <li>Selected for the 1-week Bootcamp program, along with 28 young leaders, from around 400 applicants.</li>
+                <li>Selected for the inaugural 3-month Leadership Academy program, along with 21 young leaders, from the selective pool of 500 applicants from the LALA community, already chosen among 3000 applicants;</li>
+              </ul>
+            </li>
+          </ul>
+      </section>
+  
+    <section id="skills">
+      <h2 class="section-title">Skills</h2>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Python</li>
+        <li>AWS</li>
+        <li>React</li>
+        <li>SQL</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2 class="section-title">Contact Me</h2>
+      <p>Email: flavia.iespa@uni.minerva.edu</p>
+      <p>Whatsapp: +55 21964918657 </p>
+    </section>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/110/three.min.js"></script>
+  <script>
+    // JavaScript code for the rotating globe
+    var scene, camera, renderer, earth;
+
+    function init() {
+      scene = new THREE.Scene();
+
+      camera = new THREE.PerspectiveCamera(
+        75,
+        window.innerWidth / window.innerHeight,
+        0.5,
+        1000
+      );
+      camera.position.set(6, -4, 10); // Move the camera up and closer to the center
+      var geometry = new THREE.SphereGeometry(10, 64, ); // Increase the sphere size
+
+
+      renderer = new THREE.WebGLRenderer({ antialias: true });
+      renderer.setSize(window.innerWidth, window.innerHeight);
+      renderer.setClearColor(0xffffff); // Set background color to white
+      document.getElementById("canvas-container").appendChild(renderer.domElement);
+
+
+      var geometry = new THREE.SphereGeometry(2, 32, 32);
+      var texture = new THREE.TextureLoader().load(
+        "https://threejs.org/examples/textures/planets/earth_atmos_4096.jpg"
+      );
+      var material = new THREE.MeshBasicMaterial({ map: texture });
+      earth = new THREE.Mesh(geometry, material);
+      earth.position.set(5, 0, 1.5); // Adjust the position (move it up)
+      earth.rotation.x = Math.PI * 0.2; // Adjust the rotation (tilt it slightly)
+      earth.rotation.y = - 4; // Decrease the x rotation to reduce the tilt
+
+      scene.add(earth);
+
+      animate();
+    }
+
+    function animate() {
+      requestAnimationFrame(animate);
+
+      earth.rotation.y += 0.005;
+      scene.children.forEach(function (child) {
+        if (child instanceof THREE.Mesh && child !== earth) {
+          child.rotation.y -= 0.005; // Counter-rotate the city dot
+        }
+      });
+
+      renderer.render(scene, camera);
+    }
+
+    function addCity(cityName, latitude, longitude, explanation) {
+      var phi = (90 - latitude) * (Math.PI / 180);
+      var theta = (180 - longitude) * (Math.PI / 180);
+
+      var radius = 1;
+
+      var x = radius * Math.sin(phi) * Math.cos(theta);
+      var y = radius * Math.cos(phi);
+      var z = radius * Math.sin(phi) * Math.sin(theta);
+
+      var cityGeometry = new THREE.SphereGeometry(0.05, 8, 8);
+      var cityMaterial = new THREE.MeshBasicMaterial({ color: 0xff0000 });
+      var city = new THREE.Mesh(cityGeometry, cityMaterial);
+      city.position.set(x, y, z);
+      scene.add(city);
+
+      city.addEventListener("click", function () {
+        showExplanation(cityName, explanation);
+      });
+    }
+
+    function showExplanation(cityName, explanation) {
+      var projectDetails = document.getElementById("project-details");
+      projectDetails.innerHTML = `<h3>${cityName}</h3><p>${explanation}</p>`;
+    }
+
+    init();
+  </script>
+</body>
+</html>

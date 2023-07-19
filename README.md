@@ -1,2 +1,2 @@
 # Learning Env
-From learning React to exploring all programming languages, because at this moment, Python I know I'll have to learn but the other languages still a bit cray cray about it. 
+I want to be better at programming and writing a bunch of blubs until I am. 
