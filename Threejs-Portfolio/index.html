@@ -2,122 +2,11 @@
 <html>
 <head>
   <title>Fla's Portfolio</title>
-  <style>
-    /* CSS styles for the portfolio */
-
-    body {
-      font-family: 'Times New Roman', Times, serif;
-      margin: 0;
-      padding: 20px;
-      text-align: justify;
-      line-height: 1.5;
-    }
-
-    header {
-      background-color: #333;
-      color: #fff;
-      padding: 20px;
-      text-align: center;
-    }
-
-    h1 {
-      margin: 0;
-    }
-
-    nav {
-      background-color: #f1f1f1;
-      padding: 10px;
-    }
-
-    nav ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      text-align: center;
-    }
-
-    nav ul li {
-      display: inline-block;
-      margin-right: 10px;
-    }
-
-    nav ul li a {
-      color: #141414;
-      text-decoration: none;
-      padding: 5px;
-    }
-
-    .hero-section {
-      background-color: #f9f9f9;
-      padding: 100px 0;
-      text-align: center;
-    }
-
-    .hero-section h2 {
-      margin: 0;
-      font-size: 32px;
-    }
-
-    .hero-section p {
-      font-size: 18px;
-      color: #777;
-    }
-
-    .portfolio-content {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 20px;
-    }
-
-    .section-title {
-      font-size: 20px;
-      font-weight: bold;
-      margin-bottom: 15px;
-      padding: 10px 0;
-      margin-left: 20px;
-    }
-
-    .project-item {
-      margin-bottom: 20px;
-      border: 1px solid #f1f1f1;
-      padding: 10px;
-    }
-
-    .project-item h3 {
-      margin: 0;
-      font-size: 18px;
-    }
-
-    .project-item p {
-      font-size: 16px;
-      color: #777;
-    }
-
-    .project-item a {
-      color: #333;
-      text-decoration: none;
-      font-size: 16px;
-    }
-
-    /* Updated styles for header and circle */
-
-    #circle-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 400px;
-    }
-
-    #canvas-container {
-      width: 200px;
-      height: 200px;
-      display: flex;
-    }
-  </style>
 </head>
 <body>
   <header>
     <h1>Fla's Portfolio</h1>
+    <link rel="stylesheet" href="style.css">
   </header>
 
   <nav>
@@ -177,7 +66,7 @@
           </ul>
         </li>
       </ul>
-    <section id="employer'sopinion">
+    <section id="employer's opinion">
       <h2 class="section-title">Employer's Opinion</h2>
       <div class="project-item">
         <h3>Iluma Innovations Labs - Karn Sun
@@ -411,7 +300,8 @@
       <p>Whatsapp: +55 21964918657 </p>
     </section>
   </div>
-
+</body>
+</html>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/110/three.min.js"></script>
   <script>
     // JavaScript code for the rotating globe
@@ -442,7 +332,7 @@
       );
       var material = new THREE.MeshBasicMaterial({ map: texture });
       earth = new THREE.Mesh(geometry, material);
-      earth.position.set(5, 0, 1.5); // Adjust the position (move it up)
+      earth.position.set(5, 0, 2); // Adjust the position (move it up)
       earth.rotation.x = Math.PI * 0.2; // Adjust the rotation (tilt it slightly)
       earth.rotation.y = - 4; // Decrease the x rotation to reduce the tilt
 
@@ -492,5 +382,3 @@
 
     init();
   </script>
-</body>
-</html>
