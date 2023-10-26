@@ -1,6 +1,7 @@
 import random
 from nltk.chat.util import Chat, reflections
 from flask import Flask, request, jsonify
+from flask import Flask, render_template
 
 motivational_quotes = [ "Whatever you do, always give 100%. Unless you're are donating blood", 
                        "People often say that motivation doesn’t last. Well, neither does bathing — that’s why we recommedn it daily.",
@@ -30,21 +31,6 @@ patterns = [
     (r'(.*)', ["I'm here to listen and support you. Feel free to share your thoughts and feelings.", "Please feel free to talk to me. I'm here for you."]),
 ]
 
-# Create the chatbot
-chatbot = Chat(patterns, reflections)
-
-# Main interaction loop
-print("Hello! I'm your chatbot companion. You can type 'bye' to exit.")
-while True:
-    user_input = input("You: ")
-    if user_input.lower() == 'bye':
-        print("Chatbot: Goodbye! Remember, I'm here to support your 10k journey.")
-        break
-    response = chatbot.respond(user_input)
-    if isinstance(response, list):
-        response = random.choice(response)
-    print("Chatbot:", response)
-
 app = Flask(__name__)
 
 @app.route('/')
@@ -62,4 +48,5 @@ def behavior_change_chatbot():
     return jsonify({'response': response})
 
 if __name__ == '__main__':
+    chatbot = Chat(patterns, reflections)
     app.run(host='127.0.0.1', port=5000)
