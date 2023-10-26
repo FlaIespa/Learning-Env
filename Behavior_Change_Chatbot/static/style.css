@@ -6,7 +6,7 @@ body {
 }
 
 .chat-container {
-    max-width: 800px;
+    max-width: 600px;
     margin: 0 auto;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -16,7 +16,7 @@ body {
 }
 
 .chat-header {
-    background-color: #1eb7b7;
+    background-color: #0805a8;
     color: #fff;
     padding: 10px;
     text-align: center;
@@ -33,7 +33,7 @@ body {
 }
 
 .chat-msg.bot {
-    background-color: #1eb7b7;
+    background-color: #0805a8;
     color: #fff;
 }
 
@@ -52,7 +52,7 @@ body {
 }
 
 #send-button {
-    background-color: #1eb7b7;
+    background-color: #0805a8;
     color: #fff;
     border: none;
     border-radius: 5px;
